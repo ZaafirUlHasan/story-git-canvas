@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-illustration.jpg";
 
 const Hero = () => (
@@ -25,8 +26,8 @@ const Hero = () => (
             terminal commands.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="gap-2 rounded-full px-8 text-base font-medium">
-              Start for free <ArrowRight className="h-4 w-4" />
+            <Button asChild size="lg" className="gap-2 rounded-full px-8 text-base font-medium">
+              <Link to="/stories">Start for free <ArrowRight className="h-4 w-4" /></Link>
             </Button>
             <Button
               variant="outline"

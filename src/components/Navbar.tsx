@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => (
   <header className="fixed inset-x-0 top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-md">
@@ -13,8 +14,8 @@ const Navbar = () => (
         <a href="#how" className="transition-colors hover:text-foreground">How it works</a>
         <a href="#pricing" className="transition-colors hover:text-foreground">Pricing</a>
       </div>
-      <Button size="sm" className="rounded-full px-6">
-        Sign up
+      <Button asChild size="sm" className="rounded-full px-6">
+        <Link to="/stories">Sign up</Link>
       </Button>
     </nav>
   </header>
